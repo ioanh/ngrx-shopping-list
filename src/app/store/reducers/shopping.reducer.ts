@@ -15,6 +15,8 @@ const initialState: Array<ShoppingItem> = [
 export function ShoppingReducer(state: Array<ShoppingItem> = initialState, action:
     ShoppingAction){
         switch(action.type){
+            case ShoppingActionTypes.REVERSE_ITEMS:
+                return state = state.slice().reverse()
             case ShoppingActionTypes.DELETE_ITEM:
                 return state.filter(item => item.id !== action.payload)
             case ShoppingActionTypes.ADD_ITEM:

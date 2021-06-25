@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { AddItemAction, DeleteItemAction, ShoppingActionTypes } from './store/actions/shopping.actions';
+import { AddItemAction, DeleteItemAction, ReverseItemsAction, ShoppingActionTypes } from './store/actions/shopping.actions';
 import { AppState } from './store/models/app-sate.model';
 import { ShoppingItem } from './store/models/shopping-item.model';
 import {v4 as uuid} from 'uuid';
@@ -31,5 +31,9 @@ export class AppComponent implements OnInit{
 
   deleteItem(itemID){
     this.store.dispatch(new DeleteItemAction(itemID))
+  }
+
+  reverseList(){
+    this.store.dispatch(new ReverseItemsAction())
   }
 }
