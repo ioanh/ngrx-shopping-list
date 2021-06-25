@@ -5,6 +5,7 @@ export enum ShoppingActionTypes {
     ADD_ITEM = '[SHOPPING] Add Item',
     DELETE_ITEM = '[SHOPPING] Delete Item',
     REVERSE_ITEMS = '[SHOPPING] Reverse Items',
+    DUPLICATE_ITEMS = '[SHOPPING] Duplicate Items',
 }
 
 export class AddItemAction implements Action {
@@ -23,5 +24,9 @@ export class ReverseItemsAction implements Action {
     readonly type = ShoppingActionTypes.REVERSE_ITEMS
 }
 
+export class DuplicateItemsAction implements Action {
+    readonly type = ShoppingActionTypes.DUPLICATE_ITEMS
+}
 
-export type ShoppingAction = AddItemAction | DeleteItemAction | ReverseItemsAction
+
+export type ShoppingAction = AddItemAction | DeleteItemAction | ReverseItemsAction | DeleteItemAction
