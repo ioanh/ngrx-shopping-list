@@ -29,4 +29,4 @@ export class DuplicateItemsAction implements Action {
 }
 
 
-export type ShoppingAction = AddItemAction | DeleteItemAction | ReverseItemsAction | DeleteItemAction
+export type ShoppingAction = AddItemAction | DeleteItemAction | ReverseItemsAction | DuplicateItemsAction
