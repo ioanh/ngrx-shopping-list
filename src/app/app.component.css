@@ -46,3 +46,9 @@ h2 {
     padding: 10px 0px;
     margin: 0px;
 }
+button{
+    border: 0px;
+    background: #10ac84;
+    color: white;
+    outline: none;
+}
