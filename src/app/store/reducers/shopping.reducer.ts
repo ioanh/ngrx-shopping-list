@@ -1,4 +1,4 @@
-import { ShoppingAction, ShoppingActionTypes } from "../actions/shopping.actions";
+import { DuplicateItemsAction, ShoppingAction, ShoppingActionTypes } from "../actions/shopping.actions";
 import { ShoppingItem } from "../models/shopping-item.model"
 
 const initialState: Array<ShoppingItem> = [
@@ -15,6 +15,8 @@ const initialState: Array<ShoppingItem> = [
 export function ShoppingReducer(state: Array<ShoppingItem> = initialState, action:
     ShoppingAction){
         switch(action.type){
+            case ShoppingActionTypes.DUPLICATE_ITEMS:
+                return state = [...state, ...state]
             case ShoppingActionTypes.REVERSE_ITEMS:
                 return state = state.slice().reverse()
             case ShoppingActionTypes.DELETE_ITEM:
