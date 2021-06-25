@@ -3,7 +3,7 @@ import { ShoppingItem } from '../models/shopping-item.model'
 
 export enum ShoppingActionTypes {
     ADD_ITEM = '[SHOPPING] Add Item',
-    DELETE_ITEM = '[SHOPPING] Delete Item'
+    DELETE_ITEM = '[SHOPPING] Delete Item',
 }
 
 export class AddItemAction implements Action {
