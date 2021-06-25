@@ -23,15 +23,6 @@ form > input {
     border: 0px;
     height: 20px;
 }
-form > button {
-    border: 0px;
-    background: #10ac84;
-    color: white;
-    outline: none;
-}
-form > button:hover {
-    background: #006266;
-}
 ul {
     list-style: none;
     background: #1dd1a1;
@@ -46,9 +37,13 @@ h2 {
     padding: 10px 0px;
     margin: 0px;
 }
-button{
+button {
     border: 0px;
     background: #10ac84;
     color: white;
     outline: none;
 }
+button:hover {
+    background: #006266;
+}
+
