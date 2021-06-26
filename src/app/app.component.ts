@@ -16,7 +16,7 @@ export class AppComponent implements OnInit{
   newShoppingItem: ShoppingItem = {id: '', name: ''}
 
   ngOnInit(){
-    this.shoppingItems$ = this.store.select(store => store.shopping)
+    this.shoppingItems$ = this.store.select(store => store.shopping.list)
     this.store.dispatch(new AddItemAction({id: '123', name: 'Dr. Pepper'}))
   }
 

@@ -14,7 +14,7 @@ export class ShoppingService{
     constructor(private http: HttpClient){}
 
     getShoppingItems(){
-        return this.http.get(this.SHOPPING_URL)
+        return this.http.get<Array<ShoppingItem>>(this.SHOPPING_URL)
         .pipe(
             delay(500)
         )
