@@ -46,4 +46,6 @@ button {
 button:hover {
     background: #006266;
 }
-
+.loading {
+    box-shadow: 20px 20px 0px pink !important;
+  }

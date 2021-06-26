@@ -68,9 +68,17 @@ export function ShoppingReducer(state: ShoppingState = initialState, action:
                     error: action.payload
                 }   
             case ShoppingActionTypes.DUPLICATE_ITEMS:
-                return state.list = [...state.list, ...state.list]
+                return {
+                    ...state,
+                    list: [...state.list, ...state.list],
+                    loading: false
+                }
             case ShoppingActionTypes.REVERSE_ITEMS:
-                return state.list = state.list.slice().reverse()    
+                return {
+                    ...state,
+                    list: state.list.slice().reverse(),
+                    loading: false
+                } 
             default:
                 return state;
         }

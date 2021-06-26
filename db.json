@@ -1,8 +1,20 @@
 {
-    "shopping": [
-        {
-            "id": 1,
-            "name": "Pepsi max"
-        }
-    ]
+  "shopping": [
+    {
+      "id": "801d8d29-f398-48bd-b8b5-4d4b582e5396",
+      "name": "one more "
+    },
+    {
+      "id": "32c72f1d-f0b0-4331-967c-7f049d8e03ba",
+      "name": "aa"
+    },
+    {
+      "id": "bc8dadb9-668d-436b-bc5b-f65e51c4704c",
+      "name": "adding this "
+    },
+    {
+      "id": "7cad2590-10c9-4572-8fd2-eaf19b93df74",
+      "name": "kinda cool"
+    }
+  ]
 }
