@@ -1,5 +1,4 @@
 import {Action} from '@ngrx/store'
-import { error } from 'protractor'
 import { ShoppingItem } from '../models/shopping-item.model'
 
 export enum ShoppingActionTypes {
