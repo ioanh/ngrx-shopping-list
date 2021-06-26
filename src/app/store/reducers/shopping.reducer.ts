@@ -15,6 +15,8 @@ const initialState: Array<ShoppingItem> = [
 export function ShoppingReducer(state: Array<ShoppingItem> = initialState, action:
     ShoppingAction){
         switch(action.type){
+            case ShoppingActionTypes.GET_ITEMS:
+                return state
             case ShoppingActionTypes.DUPLICATE_ITEMS:
                 return state = [...state, ...state]
             case ShoppingActionTypes.REVERSE_ITEMS:
