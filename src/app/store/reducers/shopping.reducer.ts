@@ -20,8 +20,10 @@ export function ShoppingReducer(state: Array<ShoppingItem> = initialState, actio
             case ShoppingActionTypes.REVERSE_ITEMS:
                 return state = state.slice().reverse()
             case ShoppingActionTypes.DELETE_ITEM:
+                console.log(action.type, action.payload)
                 return state.filter(item => item.id !== action.payload)
             case ShoppingActionTypes.ADD_ITEM:
+                console.log(action.type, action.payload)
                 return [...state, action.payload]
             default:
                 return state;
